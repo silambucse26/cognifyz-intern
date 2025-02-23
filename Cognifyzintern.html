@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Developer Internship - Cognifyz Technologies</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: linear-gradient(to right, #f4f4f4, #e0e0e0);
+            animation: backgroundAnimation 5s infinite alternate;
+        }
+        @keyframes backgroundAnimation {
+            from { background: linear-gradient(to right, #f4f4f4, #e0e0e0); }
+            to { background: linear-gradient(to right, #e0e0e0, #c0c0c0); }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            animation: fadeIn 1s ease-in;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 20px 0;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .cta-button:hover {
+            background-color: #0056b3;
+        }
+        nav {
+            background: #333;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .company-image {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+        }
+        .company-intern{
+            width: 300px;
+            height: 300px;
+            align-items: flex-end;
+        }
+        .company-info {
+            margin: 20px auto;
+            max-width: 800px;
+        }
+        .details {
+            display: none;
+            padding: 20px;
+            text-align: left;
+            background: white;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        footer {
+            margin-top: 20px;
+            padding: 20px;
+            background: #222;
+            color: white;
+        }
+        .social-links {
+            margin-top: 10px;
+        }
+        .social-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: white;
+            font-size: 50px;
+        }
+    </style>
+    <script>
+        function showDetails(section) {
+            document.getElementById('internship-details').style.display = 'none';
+            document.getElementById('courses-details').style.display = 'none';
+            document.getElementById(section + '-details').style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <a href="#about">About</a>
+        <a onclick="showDetails('internship')">Internship</a>
+        <a onclick="showDetails('courses')">Courses</a>
+    </nav>
+    
+    <img src="https://cdn5.f-cdn.com/ppic/219325140/logo/69533218/z3uoH/CROPPED_profile_logo_MBHWL_48c711d62010315c859dd37e07fe794a.png" alt="Cognifyz Technologies" class="company-image">
+    
+    
+    <div class="container">
+        <h1>Web Developer Internship Opportunities at Cognifyz Technologies</h1>
+        <p>Gain hands-on experience and mentorship in web development with our exciting internship program.</p>
+        
+        <div id="internship-details" class="details">
+            <h2>Internship Highlights</h2>
+            <ul>
+                <li>Real-world project experience</li>
+                <li>Mentorship from industry professionals</li>
+                <li>Flexible work environment</li>
+                <li>Opportunity for full-time employment</li>
+            </ul>
+            <img src="https://media.licdn.com/dms/image/v2/D5622AQHLYBMmpMwGPw/feedshare-shrink_800/B56ZUhhCjqHEAg-/0/1740024079295?e=2147483647&v=beta&t=HksoxBxCcliDKNR0ok1QVsM77AoTb9dum1nHb7_JSE4" class="company-intern">
+        </div>
+        
+        <div id="courses-details" class="details">
+            <h2>Courses Offered</h2>
+            <ul>
+                <li>Full Stack Web Development</li>
+                <li>Data Science with Python</li>
+                <li>UI/UX Design Principles</li>
+                <li>Machine Learning Basics</li>
+            </ul>
+        </div>
+    </div>
+    
+    <footer>
+        <p>For inquiries, contact us at <a href="mailto:info@cognifyz.com" style="color: #00bfff;">info@cognifyz.com</a></p>
+        <p>&copy; 2025 Cognifyz Technologies. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="https://linkedin.com/company/cognifyz-techonologies/people/?viewAsMember=true" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="http://www.cognifyz.com/" target="_blank"><i class="fas fa-globe"></i></a>
+            <a href="https://www.instagram.com/cognifyz_tech/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:contact@cognifyz.com"><i class="fas fa-envelope"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
